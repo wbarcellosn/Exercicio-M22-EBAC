@@ -1,0 +1,31 @@
+@use 'variables';
+
+.footer {
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variables.$textColor;
+    background-color: #000;
+
+    &__text {
+        font-size: 14px;
+    }
+    
+
+    @media (max-width: 768px) {
+
+        &__text {
+            font-size: 10px;
+        }
+
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+
+        &__text {
+            font-size: 12px;
+        }
+
+    }
+}

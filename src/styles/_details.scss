@@ -1,0 +1,94 @@
+@use 'variables';
+
+.details {
+    padding: 5vw;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-family: interstate-black, sans-serif;
+        color: #f27501;
+    }
+
+    &__subtitle {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 28px;
+        margin: 15px 0;
+
+        &:last-child {
+            color: #f27501;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        font-size: 24px;
+        font-family: interstate-black, sans-serif;
+
+        span {
+            font-family: interstate-black, sans-serif;
+            color: #f27501;
+        }
+    }
+
+    .countdown {
+
+        &__text {
+            text-align: center;
+            
+            span {
+                text-align: center;
+                display: block;
+                font-size: 20px;
+                margin-top: 20px;
+                font-family: interstate-black, sans-serif;
+                color: #f27501;
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        padding: 2vw;
+
+            &__title {
+                font-size: 16px;
+            }
+
+            &__subtitle {
+                font-size: 10px;
+                line-height: 16px;
+            }
+
+            &__text {
+                font-size: 12px;
+            }
+
+            .container {
+                gap: 15px;
+            }
+
+            .countdown {
+
+                &__text {
+                    font-size: 12px;
+
+                    span {
+                        font-size: 16px;
+                        margin-bottom: 60px;
+                    }
+                }
+            }
+    }
+}

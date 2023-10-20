@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'hero';
+@use 'details';
+@use 'attractions';
+@use 'cta';
+@use 'footer';
+@use './components/button';
+
+@font-face {
+    font-family: interstate-black;
+    src: url(../assets/fonts/Interstate\ Black\ Regular.otf);
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: variables.$principalFont;
+}
+
+body {
+    background-color: variables.$principalColor;
+    color: variables.$textColor;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}

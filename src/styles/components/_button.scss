@@ -1,0 +1,23 @@
+@use '../variables';
+
+.button {
+    padding: 30px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: variables.$secondaryColor;
+    color: variables.$textColor;
+    font-weight: bold;
+    font-family: variables.$secondaryFont;
+    border-radius: 40px;
+
+    &:hover {
+        background-color: darken(variables.$secondaryColor, 10);
+        transform: scale(1.1);
+    }
+
+    @media (max-width:768px) {
+       padding: 10px 30px;
+       font-size: 15px; 
+    }
+}
